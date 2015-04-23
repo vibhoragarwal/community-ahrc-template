@@ -9,6 +9,16 @@ body {background:#5f6a72;text-align:center;}
 /* 
     Primary Layout Containers 
 */
+
+.searchDetails {
+  margin: 0px;
+  font-size: 0.75em;
+  color: #000;
+  text-align: left;
+  background: #f0f7f9;
+  border-top: 1px solid #6b90da;
+}
+
 #pageWrap {width:960px;margin: 0 auto;text-align:left;}
 #page {margin:0 16px;padding:0 8px;background:#fff;position:relative;width: 944px;}
 #header {background:#0d3692 url(bgHeader.jpg) repeat-x top;text-align:right;height:81px;}
@@ -199,7 +209,7 @@ img.alignLeft {float:left;margin: 0 10px 10px 0;}
     background: #f0f7f9;
     border-top: 1px solid #6b90da;
     border-bottom: 1px solid #6b90da;
-}
+} 
 
 #content .googleSearch a {
     color: #2200cc;

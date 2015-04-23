@@ -110,8 +110,9 @@
         <extensions>true</extensions>
         <configuration>
           <instructions>
+            <Import-Package>${jahia.plugin.projectPackageImport},org.jahia.services.search,*</Import-Package> 
             <Jahia-Module-Type>templatesSet</Jahia-Module-Type>
-            <Jahia-Depends>ahrc-banner,ahrc-disclaimer,ahrc-footer,ahrc-header,ahrc-quick-links,ahrc-text-resizer,default,bootstrap,bootstrap-components,sitemap</Jahia-Depends>
+            <Jahia-Depends>ahrc-banner,ahrc-disclaimer,ahrc-footer,ahrc-header,ahrc-quick-links,ahrc-text-resizer,default,bootstrap,bootstrap-components,search,sitemap</Jahia-Depends>
           </instructions>
         </configuration>
       </plugin>
