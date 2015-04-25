@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
     <modules jcr:primaryType="jnt:modules">
-        <ahrc-template j:dependencies="ahrc-banner ahrc-disclaimer ahrc-footer ahrc-header ahrc-quick-links ahrc-text-resizer bootstrap bootstrap-components default search sitemap"
+        <ahrc-template j:dependencies="ahrc-banner ahrc-disclaimer ahrc-dynamic-quick-links ahrc-footer ahrc-header ahrc-quick-links ahrc-text-resizer bootstrap bootstrap-components default search sitemap"
                      j:installedModules="ahrc-template"
                      j:modulePriority="0"
                      j:moduleType="templatesSet"
@@ -105,7 +105,7 @@
                                               rowType="predefined">
                                         <searchandtextresizer jcr:primaryType="jnt:contentList">
                                             <ahrc-search jcr:primaryType="jnt:simpleSearchForm"
-                                           result="/sites/ahrc/search-results">
+                                           result="/sites/ahrc/ahrc-search-results">
                                                 <j:translation_en jcr:language="en"
                                                    jcr:mixinTypes="mix:title"
                                                    jcr:primaryType="jnt:translation"
@@ -155,7 +155,47 @@
                                     <ahrc-disclaimer jcr:primaryType="ahrc:ahrcDisclaimer"/>
                                 </bootstrap-layer-container-ahrc>
                                 <bootstrap-layer-container-ahrc-side2 jcr:primaryType="jnt:contentList">
-                                    <ahrc-quicklinks jcr:primaryType="ahrc:ahrcQuickLinks"/>
+                                    <quick-links jcr:primaryType="ahrc:ahrcquicklinksdyn">
+                                        <j:translation_en jcr:language="en"
+                                             jcr:primaryType="jnt:translation"
+                                             jcr:title="Quick Links"/>
+                                        <contact-us j:node="/sites/ahrc/ahrc-home/about-the-commission/contact-us"
+                                       j:target="_self"
+                                 jcr:primaryType="jnt:nodeLink">
+                                            <j:translation_en jcr:language="en"
+                                                jcr:primaryType="jnt:translation"
+                                                jcr:title="Contact Us"/>
+                                        </contact-us>
+                                        <faqs j:node="/sites/ahrc/ahrc-home/about-the-commission/faqs"
+                                 jcr:primaryType="jnt:nodeLink">
+                                            <j:translation_en jcr:language="en"
+                                                jcr:primaryType="jnt:translation"
+                                                jcr:title="FAQs"/>
+                                        </faqs>
+                                        <mandate j:node="/sites/ahrc/ahrc-home/about-the-commission/our-mandate"
+                                    jcr:primaryType="jnt:nodeLink">
+                                            <j:translation_en jcr:language="en"
+                                                jcr:primaryType="jnt:translation"
+                                                jcr:title="Mandate"/>
+                                        </mandate>
+                                        <about-us j:node="/sites/ahrc/ahrc-home/about-the-commission"
+                                     jcr:primaryType="jnt:nodeLink">
+                                            <j:translation_en jcr:language="en"
+                                                jcr:primaryType="jnt:translation"
+                                                jcr:title="About Us"/>
+                                        </about-us>
+                                        <code-of-conduct j:node="/sites/ahrc/ahrc-home/about-the-commission/our-mandate/code-of-conduct"
+                                            jcr:primaryType="jnt:nodeLink">
+                                            <j:translation_en jcr:language="en"
+                                                jcr:primaryType="jnt:translation"
+                                                jcr:title="Code of Conduct"/>
+                                        </code-of-conduct>
+                                        <decisions j:node="/sites/ahrc/ahrc-home/decisions" jcr:primaryType="jnt:nodeLink">
+                                            <j:translation_en jcr:language="en"
+                                                jcr:primaryType="jnt:translation"
+                                                jcr:title="Decisions"/>
+                                        </decisions>
+                                    </quick-links>
                                 </bootstrap-layer-container-ahrc-side2>
                             </bootstrap-layer-container-ahrc>
                             <ahrc-footer footerImage="/modules/ahrc-template/templates/files/themes/default/logoFooter.gif"
