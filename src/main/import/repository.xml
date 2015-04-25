@@ -155,10 +155,10 @@
                                     <ahrc-disclaimer jcr:primaryType="ahrc:ahrcDisclaimer"/>
                                 </bootstrap-layer-container-ahrc>
                                 <bootstrap-layer-container-ahrc-side2 jcr:primaryType="jnt:contentList">
-                                    <quick-links jcr:primaryType="ahrc:ahrcquicklinksdyn">
+                                    <quick-links-section jcr:primaryType="ahrc:ahrcquicklinksdyn">
                                         <j:translation_en jcr:language="en"
                                              jcr:primaryType="jnt:translation"
-                                             jcr:title="Quick Links"/>
+                                             jcr:title="Quick Links Section"/>
                                         <contact-us j:node="/sites/ahrc/ahrc-home/about-the-commission/contact-us"
                                        j:target="_self"
                                  jcr:primaryType="jnt:nodeLink">
@@ -195,7 +195,7 @@
                                                 jcr:primaryType="jnt:translation"
                                                 jcr:title="Decisions"/>
                                         </decisions>
-                                    </quick-links>
+                                    </quick-links-section>
                                 </bootstrap-layer-container-ahrc-side2>
                             </bootstrap-layer-container-ahrc>
                             <ahrc-footer footerImage="/modules/ahrc-template/templates/files/themes/default/logoFooter.gif"
