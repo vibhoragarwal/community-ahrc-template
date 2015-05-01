@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <content xmlns:j="http://www.jahia.org/jahia/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0">
     <modules jcr:primaryType="jnt:modules">
-        <ahrc-template j:dependencies="ahrc-banner ahrc-disclaimer ahrc-dynamic-quick-links ahrc-footer ahrc-header ahrc-quick-links ahrc-text-resizer bootstrap bootstrap-components default search sitemap test-jcr-1"
+        <ahrc-template j:dependencies="ahrc-banner ahrc-disclaimer ahrc-dynamic-quick-links ahrc-feedback-form-mvc ahrc-feedback-response ahrc-footer ahrc-header ahrc-quick-links ahrc-text-resizer bootstrap bootstrap-components default search sitemap test-jcr-1"
                      j:installedModules="ahrc-template"
                      j:modulePriority="0"
                      j:moduleType="templatesSet"
